@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anagram Checker</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url('anagramm.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label,
+        input {
+            margin: 5px;
+        }
+
+        #result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .action-btn {
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .action-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Anagram Checker</h1>
+        <label for="word1">Enter the first word:</label>
+        <input type="text" id="word1">
+        <br>
+        <label for="word2">Enter the second word:</label>
+        <input type="text" id="word2">
+        <br>
+        <button class="action-btn" onclick="checkAnagram()">Check</button>
+        <button class="action-btn" onclick="refreshPage()">Refresh</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="anagram.js">
+
+    </script>
+</body>
+
+</html>
